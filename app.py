@@ -25,9 +25,10 @@ def load_artifacts():
     return model, geography_encoder, gender_encoder, scaler
 
 
+st.set_page_config(page_title="Customer Churn Prediction")
+
 model, geography_encoder, gender_encoder, scaler = load_artifacts()
 
-st.set_page_title("Customer Churn Prediction")
 st.title("Customer Churn Prediction")
 st.write("Enter customer details to estimate whether they are likely to leave.")
 
